@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Home, List, CompareHorizontal } from "lucide-react"; // Corrected import
+import { Home, List, Compare } from "lucide-react"; // Corrected import
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar"; // Use the sidebar layout
 import Index from "./pages/Index.jsx";
@@ -25,7 +25,7 @@ export const navItems = [
   {
     title: "Comparison",
     to: "/comparison",
-    icon: <CompareHorizontal className="h-4 w-4" />, // Corrected icon
+    icon: <Compare className="h-4 w-4" />, // Corrected icon
   },
 ];
 
